@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Windows.h>
+#include <Windows.h> // russian library
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    SetConsoleCP(1251); // for russian
+    SetConsoleOutputCP(1251); // // for russian
     char temp[100];
     char password[] = "игорь";
     int test = 0;

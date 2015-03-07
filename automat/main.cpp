@@ -23,8 +23,12 @@ int main()
     newgame();
 
     cout << endl << "Your balance: " << balance << endl << endl;
-    if(balance == 0) cout << endl << "\t-----The End-----" << endl;
-
+    if(balance == 0) {
+            cout << endl << endl << endl << "\t\t\t   -----The End-----" << endl << endl << endl << "\t\t\tAuthor: Igor Volokitin";
+        for(int i = 0; i < 6; i++) {
+            cout << endl;
+        }
+    }
     return 0;
 }
 
@@ -45,7 +49,7 @@ void play() {
 void newgame() {
      while(balance > 0 && agree == true) {
         cout << "Balance: " << balance << endl;
-        cout << "Last number: " << a << endl << endl;
+        cout << "Last number: " << a<< endl << endl;
 
         cout << "Do you want to play? (type Y if YES, D for DOUBLE game and N if NO)" << endl;
         cin >> foragree;

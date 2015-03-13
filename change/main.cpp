@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void swapper(int* array, int size) {
+/*void swapper(int* array, int size) {
 
     int min = array[0];
     for(int i = 0; i < size; i++) {
@@ -16,10 +16,23 @@ void swapper(int* array, int size) {
     }
 
 }
-
+*/
 int main()
 {
-    int arr[10] = {3,-4,5,12,-6,2,0,40,-9,23};
-    swapper(arr,10);
+    int *arr = new int[10];
+    for(int i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+    int min = arr[0];
+    for(int i = 0; i < 10; i++) {
+        if(arr[i] < min && arr[i] > 0) min = arr[i];
+    }
+    for(int i = 0; i < 10; i++) {
+        if(arr[i] < 0) arr[i] = min;
+    }
+     for(int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+    delete [] arr;
     return 0;
 }

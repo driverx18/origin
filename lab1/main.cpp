@@ -10,6 +10,7 @@ int arr[N];
 int *parr = arr;
 int main()
 {
+    /* Natural num N (N>5) and array A1, A2, An symbol elements. Find three max elements and two min elements of this array */
     system("color 27");
 
     for(int i = 0; i < N; i++) {

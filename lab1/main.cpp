@@ -50,3 +50,5 @@ void sorting() {
         }
     }
 }
+
+/* Natural num N (N>5) and array A1, A2, An symbol elements. Find three max elements and two min elements of this array */
